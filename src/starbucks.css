@@ -1,0 +1,159 @@
+header{
+    background-color: white;
+    border: solid black 0px;
+    height: 130px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    
+}
+nav{
+    
+    /* padding-top:20px ; */
+    display: flex;
+    justify-content: space-around;
+
+}
+.nav1 ul{
+    display: flex;
+    padding-top: 25px;
+
+}
+nav img{
+    width: 280px;
+    height: 41px;
+    /* background-color: aliceblue; */
+    padding-left: 50px;
+    padding-top:25px ;
+    
+}
+/* .nav1{
+    padding-top: 20px;
+} */
+
+.nav1 a{
+    text-decoration-line: none;
+    padding: 15px;
+    color: black;
+    font-size:medium;
+    /* padding-top:40px ; */
+    text-align: center;
+}
+.nav2 button{
+    padding: 0px;
+    margin-right: 20px;
+    font-size: 14px;
+    height: 40px;
+    width: 100px;
+    border-radius: 50px;
+    
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+.yellow{
+    background-color:gold;
+
+}
+.yellowbar{
+    height: 50px;
+    background-color:gold;
+}
+.yellowbar p{
+    font-size: 16px;
+    text-align: center;
+    padding: 15px;
+}
+.green{
+    background-color:#1f3933!important;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 13px;
+    
+
+}
+.green h1{
+    font-size: 50px;
+    color: white;
+   padding: 0;
+   margin: 0;
+    margin-top: 130px;
+    margin-left: 18px;
+    
+    
+}
+.green p{
+    color: white;
+    margin-left: 30px;
+    font-size: 18px;
+}
+.green img{
+    position: relative;
+    top: 10px;
+
+    margin-right: 100px;
+}
+.discription{
+text-align: center;
+}
+.next{
+    
+    border: solid white 0px;
+    height: 50px;
+    margin-top: 5px;
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+   
+    
+    
+    
+}
+.next ul{
+    display: flex;
+    justify-content: center;
+
+    
+}
+.next li{
+    padding: 0px 20px;
+    
+}
+.next a{
+    text-decoration-line: none;
+    color: black;
+    font-size: large;
+}
+.s{
+ text-align: center;
+ margin: 150px;
+}
+.s h1{
+    font-size: x-large;
+}
+.happy{
+    display: flex;
+    padding: 10px 30px;
+}
+.h{
+    width: 340px;
+    height: 340px;
+    background-color: #1f3933;
+    margin: 20px;
+    padding: 20px;
+    color: white;
+}
+.h img{
+    width: 30px;
+    height: 30px;
+    
+    
+}
+.h:hover{
+    background-color: white;
+    color: black;
+    border: solid black 1px;
+}

@@ -1,0 +1,409 @@
+class1
+
+import './App.css';
+
+function App() {
+
+  let likes=0;
+  let b="boom";
+  
+  let handleClick=()=>{
+    ++likes;
+    
+    document.getElementById('count').innerHTML=likes
+    
+
+    // console.log(++likes);
+  }
+  // let b=20;
+  // let c=a+b;
+  // let hlink="www.google.com"
+
+
+  return (
+    <div className="App">
+      <h1 id="count">{likes}{b}</h1>
+      <button onClick={handleClick}>Click {likes}</button>
+      
+      {/* <h1 style={{color:"red"}}> {a} and {b} add the total number is {c}</h1>
+      <a href={hlink}>Link</a>
+     <h1>{Math.random()*6}</h1>
+     <p>{a*13}</p>
+
+     /* <img src='https://www.youtube.com'></img> */
+       }
+      
+    </div>
+  );
+}
+
+export default App;
+class2 
+
+import './App.css';
+import Navbar from './navbar'
+import Profile from './profile';
+import Content from './Content';
+
+function App() {
+  return (
+    <div className="App">
+       <h1>App Component</h1>
+      <Navbar/>
+      <div className="one">
+      <Profile/>
+      <Content/>
+      </div>
+     
+      
+    </div>
+  );
+}
+
+export default App;
+
+
+class 3
+
+
+import './App.css';
+import Navbar from './navbar'
+import Profile from './profile';
+import Content from './Content';
+
+function App() {
+  let handleClick=(n)=>{
+    console.log("Hello Sagar....!",n);
+  }
+  return (
+    <div className="App">
+      
+      <Navbar/>
+      <button onClick={()=>handleClick("sagar is not a bad baoy")}>Click</button>
+     
+      
+    </div>
+  );
+}
+
+export default App;
+
+class 4
+
+import './App.css';
+import Navbar from './navbar'
+import { useState } from 'react';
+
+function App() {
+  let[name,SetName,last]=useState('Sagar...!')
+  let handlclick=()=>{
+    SetName("puneet")
+    
+  }
+  let hand=()=>{
+    
+    SetName("hidi nandu ")
+  }
+  
+
+  return (
+    <div className="App">
+      
+      <Navbar/>
+       <h1>{name}</h1>
+       
+       <button onClick={handlclick}>click</button>
+       <button onClick={hand}>click</button>
+    </div>
+  );
+}
+
+export default App;
+
+class 5
+
+import './App.css';
+import Navbar from './navbar'
+import { useState } from 'react';
+
+function App() {
+  let[value,SetNum]=useState(0)
+  let increase=()=>{
+    SetNum(value +1)
+    
+  }
+  let decrease=()=>{
+    
+    SetNum(value -1)
+  }
+  let reset=()=>{
+    SetNum(value=0)
+  }
+  
+
+  return (
+    <div className="App">
+      
+      <Navbar/>
+     <h1>{value}</h1>
+     <button onClick={increase}>Increase</button>
+     <button onClick={decrease}>Decrease</button>
+     <button onClick={reset}>Reset</button>
+    </div>
+  );
+}
+
+export default App;
+
+class 6
+
+import './App.css';
+import Navbar from './navbar'
+import { useState } from 'react';
+
+function App() {
+  let [name,setName]=useState('sagar')
+  let[age,setAge]=useState('25')
+  let[year,setYop]=useState('2019')
+  let show=()=>{
+    setName('shreenivas')
+    setAge('26')
+    setYop('2018')
+  }
+
+  // let Name=()=>{
+  //   setName('Shreenivas')
+  // }
+  // let Age=()=>{
+  //   setAge('26')
+  // }
+  // let y=()=>{
+  //   setYop(2018)
+
+  // }
+
+  return (
+    <div className="App">
+      
+      <Navbar/>
+     <h1>NAME:{name}</h1>
+     <h1>AGE:{age}</h1>
+     <h1>YOP:{year}</h1>
+     <button onClick={show}>change</button>
+     {/* <button onClick={Name}>Name</button>
+     <button onClick={Age}>Age</button>
+     <button onClick={y}>Yop</button> */}
+     
+    </div>
+  );
+}
+
+export default App;
+ 
+ class 7
+ import './App.css'
+import { useState } from "react";
+const Movielist = () => {
+let[movieName,setMovie]=useState([
+    {
+        movie:"James",
+        actore:"Puneet"
+    },
+    {
+        movie:"Pushp",
+        actore:"Allu arjun"
+    },
+    {
+        movie:"Bhajarangi",
+        actore:"ShivarajKumar"
+    },
+    {
+        movie:"Bhahuddur",
+        actore:"Druva sarja"
+    },
+    {
+        movie:"Sarathi",
+        actore:"darshan"
+    }
+])
+    return (  
+        
+        <div className="pictue">
+            <div className='abc'>
+                <h1>Movie Center</h1>
+
+            </div>
+            {movieName.map((value)=>{
+                return(
+
+                    <div className="xyz">
+                    <h1>Movie:{value.movie}</h1>
+                    <h1>Actore:{value.actore}</h1><br />
+                    </div>
+                )
+            })}
+        </div>
+    );
+}
+ 
+export default Movielist;
+
+
+css class 7
+xyz{
+  
+  border: solid black 0px;
+  box-shadow: 1px 1px 2px rgb(215, 226, 236);
+  margin: 0px 100px;
+  margin-top: 20px;
+  background-color: aliceblue;
+ 
+}
+.xyz:hover{
+  box-shadow: -5px 5px 5px black;
+  transform: scale(1.01);
+  border-left: solid blue 2px;
+}
+.abc{
+  text-align: center;
+  font-size: 20px;
+  color: blue;
+  text-shadow: 2px 2px 2px blue;
+}
+.pictue{
+  margin: 10px;
+}
+class 8
+
+// import './App.css';
+import './starbucks.css'
+import Navbar from './navbar'
+import Serieslist from './Serieslist';
+import Movielist from './Movielist';
+import Movie from './Movie';
+import Footer from './Footer';
+import Starbucks from './Starbucks';
+
+
+function App() {
+ 
+
+  return (
+    <div className="App">
+      
+      {/* <Navbar/> */}
+      <div className="home">
+      {/* <Serieslist/> */}
+      {/* <Movielist/> */}
+      {/* <Movie/>
+      <Footer/> */}
+
+
+      </div>
+      <Starbucks/>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+import './App.css'
+import Serieslisk1 from './serieslisk1';
+
+import { useState,useEffect } from "react";
+import logo from './images/video-camera.png'
+import kgf from './images/kgf.jpg'
+import rrr from './images/rrr.avif'
+import james from './images/james.avif'
+import raj from './images/rajakumar.jpg'
+const Home = () => {
+    let [point,setPoint]=useState("Shreenivas")
+    let handleclick=()=>{
+        setPoint("sagya")
+    }
+
+    
+    let [movieName,setName]=useState(
+        [
+        {
+            Movie:"KGF-2",
+            Director:"Prashant neele",
+            id:1
+        },
+        {
+            Movie:"RRR",
+            Director:"Directored by S.S.Rajamouli",
+            id:2
+        },
+        {
+            Movie:"JAMES",
+            Director:"Directored by Chethan Kumar",
+            id:3
+        },
+        {
+            Movie:"RAAJAKUMAR",
+            Director:"Directored by Santhosh Ananddram",
+            id:4
+        },
+        {
+            Movie:"RATHNAN PRAPANCHA",
+            Director:"Directored by Rohit Padaki",
+            id:5
+        },
+        {
+            Movie:"RADHE SHYAM",
+            Director:"Directored by Krishana Kumar",
+            id:6
+        },
+        {
+            Movie:"POGURU",
+            Director:"Directored by Chethan",
+            id:7
+        },
+        {
+            Movie:"BHARJARI",
+            Director:"Directored by Chetan Kumar",
+            id:8
+        }
+        
+    ]
+    )
+    let clickImage=(id)=>{
+        var newData= movieName.filter((Value)=>Value.id != id)
+            setName(newData)
+            alert('deleted...')
+    }
+    useEffect(()=>{
+        console.log("it working...");
+    },[movieName])
+    return ( 
+        <div className="parent">
+            <div className="popularseries" >
+              <a href="https://www.youtube.com/watch?v=Qah9sSIXJqk" target="-blank">  <img src={kgf} alt=""  width="300px" height="400px"/></a>
+               <a href="https://www.youtube.com/watch?v=NgBoMJy386M" target="-blank"> <img src={rrr} alt="" width="300px" height="400px"/></a>
+               <a href="https://www.youtube.com/watch?v=kYUD2fYV3ho" target="_blank">  <img src={james} alt=""width="300px" height="400px" /></a>
+               <a href="https://www.youtube.com/watch?v=q9Yh9HcOmlo" target="_blank">  <img src={raj} alt="" width="300px" height="400px"/></a>
+            </div>
+            <div className="box">
+                <img src={logo} alt="" />
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla error cum ab, velit autem optio. Tempore itaque saepe et vel odio natus eaque distinctio, doloribus explicabo. Et aliquam eveniet obcaecati.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla error cum ab, velit autem optio. Tempore itaque saepe et vel odio natus eaque distinctio, doloribus explicabo. Et aliquam eveniet obcaecati.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla error cum ab, velit autem optio. Tempore itaque saepe et vel odio natus eaque distinctio, doloribus explicabo. Et aliquam eveniet obcaecati.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla error cum ab, velit autem optio. Tempore itaque saepe et vel odio natus eaque distinctio, doloribus explicabo. Et aliquam eveniet obcaecati.
+                </p>
+            </div>
+            <Serieslisk1 data={movieName} pageTitle="Popular Series" delete={clickImage}/>
+            <Serieslisk1 data={movieName.filter((value)=>value.Movie == "KGF-2")} pageTitle="Popular KGF Series"/>
+            <Serieslisk1 data={movieName.filter((value)=>value.Director=="Directored by Chethan")} pageTitle="Popular Series"/>
+            <h1>{point}</h1>
+            <button onClick={handleclick}>chenge</button>
+            </div>  
+             );
+            
+    
+}
+
+ 
+export default Home;

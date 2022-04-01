@@ -1,0 +1,59 @@
+{
+  "Movie": [
+    {
+      "Movie": "KGF-2",
+      "Director": "Prashant neele",
+      "id": 1
+    },
+    {
+      "Movie": "RRR",
+      "Director": "Directored by S.S.Rajamouli",
+      "id": 2
+    },
+    {
+      "Movie": "JAMES",
+      "Director": "Directored by Chethan Kumar",
+      "id": 3
+    },
+    {
+      "Movie": "RAAJAKUMAR",
+      "Director": "Directored by Santhosh Ananddram",
+      "id": 4
+    },
+    {
+      "Movie": "RATHNAN PRAPANCHA",
+      "Director": "Directored by Rohit Padaki",
+      "id": 5
+    },
+    {
+      "Movie": "RADHE SHYAM",
+      "Director": "Directored by Krishana Kumar",
+      "id": 6
+    },
+    {
+      "Movie": "POGURU",
+      "Director": "Directored by Chethan",
+      "id": 7
+    },
+    {
+      "Movie": "BHARJARI",
+      "Director": "Directored by Chetan Kumar",
+      "id": 8
+    },
+    {
+      "id": "00",
+      "Movie": "Shree",
+      "Director": "Shreenivas"
+    },
+    {
+      "id": "21",
+      "Movie": "ravi",
+      "Director": "Boss"
+    },
+    {
+      "id": "12",
+      "Movie": "puneet",
+      "Director": "puneet"
+    }
+  ]
+}

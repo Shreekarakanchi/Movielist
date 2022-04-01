@@ -1,0 +1,33 @@
+.nav1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(116, 224, 224);
+    position: sticky;
+    top: 0%;
+}
+ul{
+    display: flex;
+}
+span{
+    margin-left: 30px;
+    font-size: 30px;
+    padding: 0px 10px;
+}
+span:hover{
+    /* background-color: blue; */
+    color: aliceblue;
+    border-radius: 5px;
+    
+}
+/* h2{
+    color: blue;
+    font-size: 30px;
+} */
+.navlink img{
+    width: 35px;
+    height: 34px;
+}
+.navlink img:hover{
+    transform: scale(1.2);
+}
